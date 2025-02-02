@@ -23,6 +23,10 @@ A server is a computer program or device that provides a service to another comp
 A virtual server is a virtual representation of a physical server. Like a physical server, a virtual server includes its own OS and applications
 
 
+<img width="722" alt="image" src="https://github.com/user-attachments/assets/bc97610d-88b2-4763-95ad-ea23e8df4d74" />
+
+
+
 
 
 
