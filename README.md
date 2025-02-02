@@ -13,7 +13,22 @@ A hypervisor is a virtualization software that enables multiple virtual machines
 
 VM --------------- Advancement to physical servers 
 
-Eg: <img width="788" alt="image" src="https://github.com/user-attachments/assets/ae9b2a69-1624-4e38-9b79-7d1d50804477" />
+Eg: Big Land 
+
+What is a server?
+
+A server is a computer program or device that provides a service to another computer program and its user, also known as the client. The term server can refer to a physical machine, a virtual machine (VM) or software that's performing server services.In the client-server model, a server program fulfills requests from client programs, which might be running on the same computer or other computers.
+
+virtual servers
+
+A virtual server is a virtual representation of a physical server. Like a physical server, a virtual server includes its own OS and applications
+
+
+
+
+
+
+
 
 
 
