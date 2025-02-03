@@ -25,6 +25,14 @@ A virtual server is a virtual representation of a physical server. Like a physic
 
 <img width="722" alt="image" src="https://github.com/user-attachments/assets/bc97610d-88b2-4763-95ad-ea23e8df4d74" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is a container ?
+
+
+
+
+
+
 
 
 
