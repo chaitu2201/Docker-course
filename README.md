@@ -200,10 +200,94 @@ sudo usermod -aG docker azureuser
 NOTE: : You need to logout and login back for the changes to be reflected.
 
 
+# Docker is Installed, up and running 
 
-sudo systemctl status
+```
+azureuser@docker-vm:~$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+e6590344b1a5: Pull complete
+Digest: sha256:d715f14f9eca81473d9112df50457893aa4d099adeb4729f679006bf5ea12407
+Status: Downloaded newer image for hello-world:latest
 
-Docker run using rootuser and it is a single process 
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+```
+
+## Login DockerHub
+
+'''
+azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker login
+Log in with your Docker ID or email address to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
+You can log in with your password or a Personal Access Token (PAT). Using a limited-scope PAT grants better security and is required for organizations using SSO. Learn more at https://docs.docker.com/go/access-tokens/
+
+Username: nsaichaitu
+Password:
+WARNING! Your password will be stored unencrypted in /home/azureuser/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+```
+
+## DOcker File 
+
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/3c79d601-65c0-4efc-90e3-957c175a2371" />
+
+## Build your first Docker Image
+
+'''
+azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker build -t nsaichaitu/my-first-docker-image:latest .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  3.072kB
+Step 1/6 : FROM ubuntu:latest
+ ---> a04dc4851cbc
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> e411e4d720c6
+Step 3/6 : COPY . /app
+ ---> Using cache
+ ---> 93cc6a0a688c
+
+'''
+
+## Verify Docker Image is created
+
+```
+azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker images
+REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
+nsaichaitu/my-first-docker-image   latest    9a5de09473d9   35 minutes ago   552MB
+nschaitu/my-first-docker-image     latest    9a5de09473d9   35 minutes ago   552MB
+ubuntu                             latest    a04dc4851cbc   9 days ago       78.1MB
+hello-world                        latest    74cc54e27dc4   2 weeks ago      10.1kB
+
+```
+
+## Run your First Docker Container
+
+```
+azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker run -it nsaichaitu/my-first-docker-image:latest
+Hello World
+
+```
+
+## Push the Image to DockerHub and share it with others
+
+```
+azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker push nsaichaitu/my-first-docker-image:latest
+The push refers to repository [docker.io/nsaichaitu/my-first-docker-image]
+adad54215a21: Layer already exists
+2e27074727d9: Layer already exists
+a1cc37594853: Layer already exists
+4b7c01ed0534: Layer already exists
+latest: digest: sha256:87ca27fdd3744486aaf4779517659b0b3527b4db13cc72e97ed38a17324540cb size: 1155
+
+```
+
+Note: Docker will run using rootuser and it is a single monolothic process... 
 
 
 
