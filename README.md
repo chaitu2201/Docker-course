@@ -115,7 +115,7 @@ The Docker daemon (dockerd) listens for Docker API requests and manages Docker o
 
 The Docker client (docker) is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.
 
-# Docker Desktop
+## Docker Desktop
 
 Docker Desktop is an easy-to-install application for your Mac, Windows or Linux environment that enables you to build and share containerized applications and microservices. Docker Desktop includes the Docker daemon (dockerd), the Docker client (docker), Docker Compose, Docker Content Trust, Kubernetes, and Credential Helper. For more information, see Docker Desktop.
 
@@ -144,7 +144,6 @@ You might create your own images or you might only use those created by others a
 
 ## Difference between Github and Dockerhub 
 
-
 Github is version control Platform used to store source code.
 
 Dockerhub is also a version control platform to store Docker images.
@@ -154,6 +153,7 @@ Dockerhub is also a version control platform to store Docker images.
 ```
 sudo apt update
 sudo apt install docker.io -y
+
 ```
 
 ## Start Docker and Grant Access
@@ -165,16 +165,9 @@ Always ensure the docker daemon is up and running.
 A easy way to verify your Docker installation is by running the below command
 
 ```
-docker run hello-world
-```
-
-If the output says:
-
-```
 azureuser@docker-vm:~/docker$ docker run hello-world
 docker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied.
 See 'docker run --help'.
-
 ```
 
 This can mean two things,
@@ -217,7 +210,7 @@ This message shows that your installation appears to be working correctly.
 
 ## Login DockerHub
 
-'''
+```
 azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker login
 Log in with your Docker ID or email address to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
 You can log in with your password or a Personal Access Token (PAT). Using a limited-scope PAT grants better security and is required for organizations using SSO. Learn more at https://docs.docker.com/go/access-tokens/
@@ -232,11 +225,12 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 ## DOcker File 
 
-<img width="424" alt="image" src="https://github.com/user-attachments/assets/3c79d601-65c0-4efc-90e3-957c175a2371" />
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/b7ed01e0-860b-42aa-aec8-281a2cd49253" />
+
 
 ## Build your first Docker Image
 
-'''
+```
 azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker build -t nsaichaitu/my-first-docker-image:latest .
 DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
             Install the buildx component to build images with BuildKit:
@@ -252,7 +246,7 @@ Step 3/6 : COPY . /app
  ---> Using cache
  ---> 93cc6a0a688c
 
-'''
+```
 
 ## Verify Docker Image is created
 
@@ -287,40 +281,4 @@ latest: digest: sha256:87ca27fdd3744486aaf4779517659b0b3527b4db13cc72e97ed38a173
 
 ```
 
-Note: Docker will run using rootuser and it is a single monolothic process... 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Note: Docker will run using rootuser and it is a single monolothic process..
