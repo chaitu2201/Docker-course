@@ -1,4 +1,4 @@
-# Docker-course
+## Docker-course
 
 ## What is a Virtual Machine(VM)? 
 
@@ -83,7 +83,7 @@ It's important to note that while a container uses resources from the host opera
 so, in a nutshell, container base images are typically smaller compared to VM images because they are designed to be minimalist and only contain the necessary components for running a specific application or service. VMs, on the other hand, emulate an entire operating system, including all its libraries, utilities, and system files, resulting in a much larger size.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# <ins>Docker</ins>
+## Docker Begins
 
 ## What is Docker ?
 
