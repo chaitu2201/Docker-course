@@ -193,7 +193,7 @@ sudo usermod -aG docker azureuser
 NOTE: : You need to logout and login back for the changes to be reflected.
 
 
-# Docker is Installed, up and running 
+## Docker is Installed, up and running 
 
 ```
 azureuser@docker-vm:~$ docker run hello-world
@@ -223,7 +223,7 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 ```
 
-## DOcker File 
+## Docker File 
 
 <img width="424" alt="image" src="https://github.com/user-attachments/assets/b7ed01e0-860b-42aa-aec8-281a2cd49253" />
 
