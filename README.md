@@ -128,9 +128,91 @@ When you use the docker pull or docker run commands, the required images are pul
 
 When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.
 
+   Eg: Docker registry , pay.io
+
 ## Dockerfile
 
-Dockerfile is a file where you provide the steps to build your Docker Image().
+Dockerfile is a set of instructions file to build your Docker Image that you share to Docker Daemon.
+
+
+## Docker Images
+
+An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.
+
+You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies.
+
+
+## Difference between Github and Dockerhub 
+
+
+Github is version control Platform used to store source code.
+
+Dockerhub is also a version control platform to store Docker images.
+
+## INSTALL DOCKER
+
+```
+sudo apt update
+sudo apt install docker.io -y
+```
+
+## Start Docker and Grant Access
+
+After they install docker using the sudo access, they miss the step to Start the Docker daemon and grant acess to the user they want to use to interact with docker and run docker commands.
+
+Always ensure the docker daemon is up and running.
+
+A easy way to verify your Docker installation is by running the below command
+
+```
+docker run hello-world
+```
+
+If the output says:
+
+```
+azureuser@docker-vm:~/docker$ docker run hello-world
+docker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+
+```
+
+This can mean two things,
+
+1.Docker deamon is not running.
+2.Your user does not have access to run docker commands.
+
+## Start Docker daemon
+
+```
+sudo systemctl status docker
+sudo systemctl start docker
+```
+## Grant Access to your user to run docker commands
+
+To grant access to your user to run the docker command, you should add the user to the Docker Linux group. Docker group is create by default when docker is installed.
+
+```
+sudo usermod -aG docker azureuser
+
+```
+
+NOTE: : You need to logout and login back for the changes to be reflected.
+
+
+
+sudo systemctl status
+
+Docker run using rootuser and it is a single process 
+
+
+
+
+
+
+
+
+
 
 
 
