@@ -228,7 +228,7 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 <img width="424" alt="image" src="https://github.com/user-attachments/assets/b7ed01e0-860b-42aa-aec8-281a2cd49253" />
 
 
-## Build your first Docker Image
+## Build your Docker Image
 
 ```
 azureuser@docker-vm:~/Docker-Zero-to-Hero/examples/first-docker-file$ docker build -t nsaichaitu/my-first-docker-image:latest .
