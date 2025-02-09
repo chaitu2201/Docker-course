@@ -44,7 +44,7 @@ Containers are lightweight because they use a technology called containerization
 
 official ubuntu base image which you can use for your container. It's just ~ 22 MB, isn't it very small ? on a contrary if you look at official ubuntu VM image it will be close to ~ 2.3 GB. So the container base image is almost 100 times less than VM image.
 
-Note: Contaiers are ephimeral in nature ie they are short lived..
+Note: Contaiers are ephimeral in nature ie they are short lived and it is a layered filesystem.
 
 ## Files and Folders in containers base images
 
@@ -117,15 +117,21 @@ There are three important things,
 
 ## Docker daemon
 
-The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.
+The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemon(more than 1 daemon) to manage Docker services.
 
 ## Docker client
 
 The Docker client (docker) is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.
 
+In short Docker Client uses Commands and Rest API to communicate with Docker Daemon
+
 ## Docker Desktop
 
 Docker Desktop is an easy-to-install application for your Mac, Windows or Linux environment that enables you to build and share containerized applications and microservices. Docker Desktop includes the Docker daemon (dockerd), the Docker client (docker), Docker Compose, Docker Content Trust, Kubernetes, and Credential Helper. For more information, see Docker Desktop.
+
+## Docker Host
+
+Docker Host is used to provide an environment to execute and run applications. It contains the docker Daemon, images ,containers, network and storage.
 
 
 ## Docker registries
