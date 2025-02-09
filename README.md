@@ -155,6 +155,8 @@ An image is a read-only template with instructions for creating a Docker contain
 
 You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies.
 
+Docker images are read only binary templated uses to create docker containers.
+
 
 ## Advantages of Docker 
 
