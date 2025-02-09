@@ -93,7 +93,9 @@ Docker is a containerization platform that provides easy way to containerize you
 
 In simple words, you can understand as containerization is a concept or technology and Docker Implements Containerization.
 
-Docker is a set of platform as a service that uses OS level virtualization where as VMware uses Hardware level Virtualization. 
+Dockeris a set of platform as a service that uses OS level virtualization where as VMware uses Hardware level Virtualization. 
+
+Docker is  open source centralized platform designed to create , deploy and run applications written in GO language.
 
 Note: Docker was relased in Mar 2013 developed by solomon Hykes and Sebastain Patel.
 
@@ -148,6 +150,38 @@ An image is a read-only template with instructions for creating a Docker contain
 You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies.
 
 
+## Advantages of Docker 
+
+```
+
+1. No Pre Allocation of RAM.
+
+2. CI Efficency: Docker enables you to build container image and use the same image accross every step of the deployment process.
+
+3. Less Cost and It is light in weight.
+
+4. It can run on Physical H/W / virtual H/W or on cloud.
+
+5. you can re-use the same image.
+
+6. It will take less time to create a container.
+
+```
+
+## Limitations / Diasdvantages of Docker
+
+```
+1. Docker is not a good solution for application that rquired rich GUI.
+
+2. Difficult to maange large amount of containers.
+
+3. Docker does not provide Cross-Platform compatability ie if an application is designed to run a docker container on windows, then it can't run linux , vice versa.
+
+4. Docker is suitable when development OS and testing OS are same if OS is different, we should use VM.
+
+5. No Solution for Data Recovery and Backup.
+
+```
 ## Difference between Github and Dockerhub 
 
 Github is version control Platform used to store source code.
