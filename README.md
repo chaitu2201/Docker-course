@@ -93,6 +93,10 @@ Docker is a containerization platform that provides easy way to containerize you
 
 In simple words, you can understand as containerization is a concept or technology and Docker Implements Containerization.
 
+Docker is a set of platform as a service that uses OS level virtualization where as VMware uses Hardware level Virtualization. 
+
+Note: Docker was relased in Mar 2013 developed by solomon Hykes and Sebastain Patel.
+
 ## Docker Architecture ?
 
 ![image](https://github.com/user-attachments/assets/5445f545-a2bb-43c0-9491-a0903af5d82c)
