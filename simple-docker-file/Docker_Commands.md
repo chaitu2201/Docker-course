@@ -42,6 +42,6 @@
     
 12. To Delete a Container
 
-     d ocker rm container123
+      docker rm container123
         
       
