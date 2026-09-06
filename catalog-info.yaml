@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: LinuxZerotoHero
+  description: Repo to master linux from zero to hero.
+  annotations:
+    github.com/project-slug: chaitu2201/Docker-course
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: Service
+  owner: DevOpsPlatform
+  lifecycle: experimental
