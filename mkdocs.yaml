@@ -14,4 +14,4 @@ nav:
   - Overview:
   - Getting Started:
       - What is Docker?: 'docs/index.md'
-      - Basic/important Commands: 'L1_info.md'
+      - Basic/important Commands: 'docs/L1_info.md'
