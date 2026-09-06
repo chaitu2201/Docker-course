@@ -4,7 +4,9 @@ repo_url: https://github.com/chaitu2201/Docker-course
 edit_uri: edit/main/docs
 plugins:
   - techdocs-core
+
 nav:
   - Overview:
-    - Getting Started:
-      - What is Docker?: 'index.md' # <--- CHANGED FROM 'docs/index.md'
+      - Getting Started:
+          - 'What is Docker?': 'index.md'
+          - 'Basic commands': 'L1_info.md' # Aligned perfectly under Getting Started
