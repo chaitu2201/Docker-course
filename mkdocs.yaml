@@ -2,15 +2,9 @@ site_name: 'DockerZerotohero'
 site_description: 'The repo is userful if you want to learn docker and become proficient in docker and its concepts.'
 repo_url: https://github.com/chaitu2201/Docker-course
 edit_uri: edit/main/docs
-
 plugins:
   - techdocs-core
-  - redirects:
-      redirect_maps:
-        'index.md': 'overview/what-is-backstage.md'
-
-# For sidebar navigation on https://backstage.io/, see `microsite/sidebars.js`
 nav:
   - Overview:
-  - Getting Started:
-      - What is Docker?: 'docs/index.md'
+    - Getting Started:
+      - What is Docker?: 'index.md' # <--- CHANGED FROM 'docs/index.md'
