@@ -5,7 +5,7 @@ metadata:
   description: Repo to master Docker from zero to hero.
   annotations:
     github.com/project-slug: chaitu2201/Docker-course
-  #   backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
   owner: DevOpsPlatform
